@@ -1,0 +1,10 @@
+{
+    "name": "Base Social Mini App",
+    "description": "A social tipping app built on Base and Farcaster",
+    "icon": "https://base-social-mini-app.vercel.app/favicon.ico",
+    "redirect_uris": ["https://base-social-mini-app.vercel.app/callback"],
+    "website": "https://base-social-mini-app.vercel.app",
+    "terms_uri": "https://base-social-mini-app.vercel.app/terms",
+    "privacy_uri": "https://base-social-mini-app.vercel.app/privacy"
+  }
+  

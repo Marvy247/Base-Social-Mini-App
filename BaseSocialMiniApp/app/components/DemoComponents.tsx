@@ -78,7 +78,7 @@ type CardProps = {
   onClick?: () => void;
 }
 
-function Card({
+export function Card({
   title,
   children,
   className = "",
@@ -157,27 +157,10 @@ type HomeProps = {
   setActiveTab: (tab: string) => void;
 };
 
-export function Home({ setActiveTab }: HomeProps) {
-  return (
-    <div className="space-y-6 animate-fade-in">
-      <Card title="My First Mini App">
-        <p className="text-[var(--app-foreground-muted)] mb-4">
-          This is a minimalistic Mini App built with OnchainKit components.
-        </p>
-        <Button
-          onClick={() => setActiveTab("features")}
-          icon={<Icon name="arrow-right" size="sm" />}
-        >
-          Explore Features
-        </Button>
-      </Card>
+import Home from "./Home";
 
-      <TodoList />
+export { Home };
 
-      <TransactionCard />
-    </div>
-  );
-}
 
 type IconProps = {
   name: "heart" | "star" | "check" | "plus" | "arrow-right";
